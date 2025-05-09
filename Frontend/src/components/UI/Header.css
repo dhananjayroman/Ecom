@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ background-color: rgb(40, 116, 240);
+  
+ /* Modern blue gradient */
+  color: #ffffff;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header-logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #F39C12;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  color: #ffffff;
+}
+
+.header-nav {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+}
+
+.header-nav li {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.header-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.header-nav li a:hover,
+.header-nav li .active {
+  color: #ffd700; /* Gold highlight */
+}
+
+/* Cart Button Styling */
+.header-cart {
+  margin-left: 20px;
+}
+
+.header-cart a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.header-cart a:hover {
+  background-color: #e68900;
+  transform: scale(1.07);
+}
+
+/* Search Input Styling */
+.header-search {
+  margin-left: auto;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-search input.styled-search {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  color: #333;
+  outline: none;
+}
+
+.header-search input.styled-search:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 8px rgba(30, 136, 229, 0.3);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    padding: 10px;
+  }
+
+  .header-nav.active {
+    display: flex;
+  }
+
+  .header-search {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .header-search input {
+    width: 100%;
+  }
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+  

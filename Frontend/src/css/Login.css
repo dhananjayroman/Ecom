@@ -1,0 +1,209 @@
+
+
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container for centering the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #89f190, #f89090, rgb(104, 155, 236)); /* Gradient background */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Login box styling */
+.login-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease-out;
+}
+
+/* Icon circle styling with animation */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(40, 116, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  transform: scale(0);
+  animation: iconAppear 1s ease-out forwards;
+}
+
+.icon-circle i {
+  font-size: 30px;
+  color: white;
+}
+
+/* Heading animation */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 0.5s forwards;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+.country-code {
+  background-color: #f5f5f5;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+input:focus {
+  border-color:  rgb(40, 116, 240);
+}
+
+/* Error message styling */
+.error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
+}
+
+/* Submit button styling with animation */
+.submit-btn {
+  background-color: rgb(40, 116, 240);
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 2s forwards;
+}
+
+.submit-btn:hover {
+  background-color:  rgb(40, 116, 240);
+}
+
+.terms {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #555;
+}
+
+.terms a {
+  color:  rgb(40, 116, 240);
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+
+  .terms {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .login-box {
+    width: 400px;
+  }
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes iconAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+

@@ -1,0 +1,103 @@
+/* ==== Contact Section ==== */
+.contact-section {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .contact-section h1 {
+    text-align: center;
+    font-size: 40px;
+    color:black;
+    margin-bottom: 10px;
+    
+  }
+  
+  .contact-section .highlight {
+    color: #ff4d6d;
+  }
+  
+  .contact-section p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .contact-form {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007aff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005ac1;
+  }
+  
+  .contact-info {
+    flex: 1 1 300px;
+    background-color: #fafafa;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+  }
+  
+  .contact-info h2 {
+    color:black;
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: black;
+  }
+
+  .contact-section {
+    color: #000; /* Set all text inside the section to black */
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form label,
+  .contact-info h2,
+  .contact-info p {
+    color: #000; /* Ensure specific form and info text is also black */
+  }
+  
+  
