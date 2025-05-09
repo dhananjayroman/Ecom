@@ -26,7 +26,7 @@ const Cart = () => {
     };
 
     try {
-      await axios.post("http://localhost:5000/order", orderData);
+      await axios.post("https://ecom-arhe.onrender.com/order", orderData);
       alert("✅ Order placed successfully!");
       navigate("/order-success");
       console.log(orderData);
