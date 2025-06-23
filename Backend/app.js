@@ -71,6 +71,10 @@ app.post('/login', async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("🚀 Schoolvan backend is running!");
+});
+
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
