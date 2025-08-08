@@ -1,0 +1,149 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.review-container {
+  font-family: 'Poppins', sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.review-container h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #444;
+}
+
+.offer-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9ff;
+  border-left: 4px solid #6c63ff;
+  border-radius: 8px;
+}
+
+.offer-section h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.offer-section p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.offer-section button {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.offer-section button:hover {
+  background: #574ee0;
+}
+
+.success {
+  color: green;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #222;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.final-order-btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #27ae60;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.final-order-btn:hover {
+  background-color: #1f8f4d;
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .review-container {
+    padding: 20px;
+  }
+
+  .review-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  h3 {
+    text-align: left;
+  }
+}
+
+.payment-section {
+  margin: 20px 0;
+}
+.payment-section label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.payment-ui {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px dashed #4caf50;
+  background: #f0fff0;
+}
+.confirm-order-btn,
+.final-order-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.confirm-order-btn:hover,
+.final-order-btn:hover {
+  background-color: #388e3c;
+}
+

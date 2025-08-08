@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+
+
 import "../css/Cart.css";
 
 const Cart = () => {
@@ -14,27 +15,7 @@ const Cart = () => {
 
   const navigate = useNavigate();
 
-  const handlePlaceOrder = async () => {
-    const totalAmount = cartItems.reduce(
-      (acc, item) => acc + item.price * item.quantity,
-      0
-    );
-
-    const orderData = {
-      totalAmount,
-      items: cartItems,
-    };
-
-    try {
-      await axios.post("https://ecom-arhe.onrender.com/order", orderData);
-      alert("✅ Order placed successfully!");
-      navigate("/order-success");
-      console.log(orderData);
-    } catch (err) {
-      console.error(err);
-      alert("❌ Error placing order");
-    }
-  };
+ 
 
   const total = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -79,9 +60,13 @@ const Cart = () => {
 
           <h3 className="cart-total">Total: ₹{total.toFixed(2)}</h3>
 
-          <button className="place-order-btn" onClick={handlePlaceOrder}>
-            ✅ Place Order
-          </button>
+          <button
+  className="place-order-btn"
+  onClick={() => navigate("/review-order")}
+>
+  📦 Review & Place Order
+</button>
+
         </>
       )}
     </div>

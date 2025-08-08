@@ -150,6 +150,32 @@
   transform: scale(1.05);
 }
 
+.header-cart {
+  position: relative;
+  margin-right: 15px;
+}
+
+.cart-icon-link {
+  color: #fff;
+  position: relative;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
 
 
 

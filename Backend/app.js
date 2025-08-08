@@ -19,6 +19,15 @@ mongoose.connect(process.env.MONGO_URI, {
   // .then(() => console.log("✅ MongoDB Connected"))
   // .catch((err) => console.error("❌ MongoDB Error:", err));
 
+
+  app.use(cors({
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+  methods:['GET','POST','PUT','DELETE','OPTIONS'],
+  allowedHeaders:['Content-Type','Authorization']
+}));
+
+
 // Order route to add order data
 app.post("/order", async (req, res) => {
   try {

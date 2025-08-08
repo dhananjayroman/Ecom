@@ -18,19 +18,19 @@ function LoginForm() {
     }
 
     try {
-      // eslint-disable-next-line no-unused-vars
-      const response = await axios.post("https://ecom-arhe.onrender.com/login", {
-        phoneNumber: phone,
-      });
+  // eslint-disable-next-line no-unused-vars
+  const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/login`, {
+    phoneNumber: phone,
+  });
 
-      localStorage.setItem("isLoggedIn", "true"); // Store login state
-      alert("Login success");
-      navigate("/home"); // Redirect to home after login
-    } catch (error) {
-      console.error("Login failed:", error.response?.data?.message || error.message);
-      setError("Login failed. Please try again.");
-    }
-  };
+  localStorage.setItem("isLoggedIn", "true"); // Store login state
+  alert("Login success");
+  navigate("/home"); // Redirect to home after login
+} catch (error) {
+  console.error("Login failed:", error.response?.data?.message || error.message);
+  setError("Login failed. Please try again.");
+}
+  }
 
   return (
     <div className="login-container">

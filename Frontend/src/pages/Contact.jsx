@@ -16,18 +16,18 @@ export const Contact = () => {
       message,
     };
 
-    try {
-      await axios.post("https://ecom-arhe.onrender.com/contact", contactData);
-      alert("✅ Message sent successfully!");
-      setName("");
-      setEmail("");
-      setMessage("");
-      console.log(contactData)
-    } catch (err) {
-      console.error(err);
-      alert("❌ Error sending message");
-    }
-  };
+  try {
+  await axios.post(`${import.meta.env.VITE_BACKEND_URL}/contact`, contactData);
+  alert("✅ Message sent successfully!");
+  setName("");
+  setEmail("");
+  setMessage("");
+  console.log(contactData);
+} catch (err) {
+  console.error(err);
+  alert("❌ Error sending message");
+}
+  }
 
   return (
     <section className="contact-section">

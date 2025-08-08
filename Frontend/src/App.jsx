@@ -13,6 +13,8 @@ import "./App.css"; // App styling
 
 import ErrorPage from "./pages/ErrorPage";
 import { CartContext, CartProvider } from "./Context/CartContext";
+import ReviewOrder from "./components/ReviewOrder";
+
 
 const App = () => {
   const [products, setProducts] = useState([]); // State to store products
@@ -77,6 +79,11 @@ const App = () => {
           path: "order-success", // Order success route (No protection)
           element: <OrderSuccess />, // Render order success page
         },
+        {
+          path:"/review-order",
+          element:<ReviewOrder/>
+        }
+      
       ],
     },
   ]);

@@ -1,0 +1,46 @@
+.payment-method-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-option {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.payment-option label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-details {
+  padding: 10px 0 0 30px;
+}
+
+.payment-details input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: #666;
+}
+
